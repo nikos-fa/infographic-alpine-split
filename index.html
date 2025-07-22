@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" x-data="themeToggle()" :class="{ 'dark': isDark }">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Prospect to Prodigy: An Infographic on Needs-Based Teaching</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Alpine.js -->
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans">
+  <div class="container mx-auto p-4 md:p-8">
+    <!-- Theme Toggle Button -->
+    <div class="flex justify-end mb-4">
+      <button @click="toggleTheme" class="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600">
+        Toggle Theme
+      </button>
+    </div>
+
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <h1 class="text-4xl md:text-6xl font-black text-blue-700 dark:text-blue-400 uppercase tracking-wide">
+        From Prospect to Prodigy
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mt-2 max-w-3xl mx-auto">
+        Visualizing the "Needs-Based Pedagogy" System for Teaching Scratch to Students Who Aren't (Yet) Interested in Coding
+      </p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Content Sections Here -->
+      <!-- Separated in modular sections inside app.js -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center mt-16 py-4 border-t border-gray-300 dark:border-gray-700">
+      <p class="text-gray-500 dark:text-gray-400">
+        Infographic created based on the "Needs-Based Pedagogy" model. No SVG or Mermaid.js used.
+      </p>
+    </footer>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
